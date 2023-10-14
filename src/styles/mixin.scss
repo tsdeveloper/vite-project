@@ -1,0 +1,17 @@
+@use "sass:meta";
+@mixin font-smooth-with-browser($property, $value, $prefixes: (), $default-property, $default-value){
+  @each $prefix in $prefixes {
+    #{'-' + $prefix + '-'+ $property+'ing'}: $value;
+  }
+
+  #{$default-property}: $default-value;
+}
+
+
+@mixin style-font($property, $value, $types: ()){
+ @for $i from 0 to length($types) {
+    #{nth($types, $i + 1)}{
+        #{$property}: $value;
+    }
+  }
+}

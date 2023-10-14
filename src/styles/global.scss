@@ -1,0 +1,34 @@
+@import "font";
+@import "variable";
+@import "mixin";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $gray-900;
+  color: $gray-300;
+  @include font-smooth-with-browser(
+    font-smooth,
+    antialiased,
+    webkit ms moz o,
+    font-smooth,
+    auto
+  );
+}
+@include style-font(font-family, $font-general, body input textarea button)
+// body {
+//   font-family: $font-general;
+//   input {
+//     font-family: $font-input;
+//   }
+//   textarea {
+//     font-family: $font-textarea;
+//   }
+//   button {
+//     font-family: $font-button;
+//   }
+// }
