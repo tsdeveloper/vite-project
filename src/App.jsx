@@ -1,20 +1,16 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import './styles/global.scss';
-import { Post } from "./Post";
 import { Header } from "./components/Header";
 
-function App() {
-  const [count, setCount] = useState(0);
+import styles from './App.module.css';
+import './styles/global.scss';
 
-  return (
+
+function App() {
+    return (
     <div>
       <Header />
-      <Post
-        author="Developer"
-        content="Ex et quis officia culpa nulla nisi commodo sit adipisicing culpa officia sit occaecat laboris."
-      />
+     <div className={styles.wrapper}>
+      aside+main
+     </div>
     </div>
   );
 }

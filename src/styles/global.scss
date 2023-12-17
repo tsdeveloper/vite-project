@@ -19,7 +19,7 @@ body {
     auto
   );
 }
-@include style-font(font-family, $font-general, body input textarea button)
+@include style-font(font-family, $font-general, body input textarea button strong)
 // body {
 //   font-family: $font-general;
 //   input {
