@@ -7,10 +7,10 @@ import { Sidebar } from "./components/Sidebar";
 
 function App() {
   return (
-    <div>
+    <section>
       <Header />
 
-      <div className={styles.wrapper}>
+      <section className={styles.wrapper}>
         <Sidebar />
         <main>
           <Post
@@ -23,8 +23,8 @@ function App() {
             content="Ex et quis officia culpa nulla nisi commodo sit adipisicing culpa officia sit occaecat laboris."
           />
         </main>
-      </div>
-    </div>
+      </section>
+    </section>
   );
 }
 

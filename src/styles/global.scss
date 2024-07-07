@@ -1,12 +1,9 @@
-@import "font";
-@import "variable";
-@import "mixin";
+@import "_reset";
+@import "_font";
+@import "_variable";
+@import "_mixin";
+@import "_sidebar";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
   background: $gray-900;
@@ -20,15 +17,3 @@ body {
   );
 }
 @include style-font(font-family, $font-general, body input textarea button strong)
-// body {
-//   font-family: $font-general;
-//   input {
-//     font-family: $font-input;
-//   }
-//   textarea {
-//     font-family: $font-textarea;
-//   }
-//   button {
-//     font-family: $font-button;
-//   }
-// }
