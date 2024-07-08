@@ -1,5 +1,5 @@
 import { Header } from "./components/Header";
-import { Post } from "./Post";
+import { Post } from "./components/Post";
 
 import styles from "./App.module.css";
 import "./styles/global.scss";
@@ -15,12 +15,14 @@ function App() {
         <main>
           <Post
             author="Developer"
-            content="Ex et quis officia culpa nulla nisi commodo sit adipisicing culpa officia sit occaecat laboris."
+            position="Web Design"
+            content="<p>🛸Ex et quis officia culpa nulla</p><p>nisi commodo sit adipisicing</p> <p>culpa officia sit occaecat laboris.</p>"
           />
 
           <Post
             author="Developer"
-            content="Ex et quis officia culpa nulla nisi commodo sit adipisicing culpa officia sit occaecat laboris."
+            position="Web Developer"
+            content="😎Ex et quis officia culpa nulla nisi commodo sit adipisicing culpa officia sit occaecat laboris."
           />
         </main>
       </section>
