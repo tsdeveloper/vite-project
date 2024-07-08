@@ -17,7 +17,7 @@
   @for $i from 0 to length($types) {
     #{nth($types, $i + 1)} {
       #{$property}: $value;
-      font-size: 1.25rem;
+      font-size: $font-size-primary;
     }
   }
 }
