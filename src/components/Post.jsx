@@ -6,7 +6,7 @@ export function Post(props) {
         <div className="author">
           <img
             className="avatar"
-            src="https://avatars.githubusercontent.com/u/5727326?v=4"
+            src="https://avatar.iran.liara.run/public"
           />
           <div className="author-info">
             <strong>{props.author}</strong>
@@ -18,7 +18,11 @@ export function Post(props) {
       </header>
 
       <div className="content">
-        <p>{props.content}</p>
+        {props.content.map((key) => (
+            <p>{key}</p>            
+            //   { return (<p>{key}</p>)}
+          )
+        )}
       </div>
     </article>
   );
