@@ -8,10 +8,25 @@ import { Sidebar } from "./components/Sidebar";
 function App() {
 
   const posts = [
-    { name: 'Web developer', position:'Architecture Engineer', title: ['👻🛸Lorem ipsum dolor sit amet consectetur adipisicing elit','https://github.com/tsdeveloper/vite-project', '👉🏽👽 Follow me guys..!']},
-    // { name: 'XPTO DevOps', position:'DevOps Developer', title:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit perspiciatis, corrupti necessitatibus voluptatum molestias nisi quos id incidunt dolores facere minima nemo repudiandae explicabo adipisci, aspernatur eveniet soluta modi magnam.'},
-    // { name: 'XPTO Front End', position:'UI/UX', title:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa perferendis autem illum quam modi hic? Nobis, repellendus voluptatum? Saepe dolores amet in sit, error voluptates officiis laboriosam inventore quaerat dolor.'},
-
+    { name: 'Web developer', 
+      position:'Architecture Engineer', 
+      title: ['👻🛸Lorem ipsum dolor sit amet consectetur adipisicing elit',
+        '👉🏽 https://github.com/tsdeveloper/vite-project', 
+        '#frontend #reactjs #vite #nextjs']
+    },    
+    { name: 'John Wicky', 
+      position:'UI/UX', 
+      title: [
+        '👻🛸Lorem ipsum dolor sit amet consectetur adipisicing elit',
+        '👉🏽 https://github.com/tsdeveloper/vite-project', 
+        '#frontend #reactjs #vite #nextjs']
+    },    
+    { name: 'Yoda', 
+      position:'Jedi', 
+      title: ['👻🛸Lorem ipsum dolor sit amet consectetur adipisicing elit',
+        '👉🏽 https://github.com/tsdeveloper/vite-project', 
+        '#frontend #reactjs #vite #nextjs']
+    },    
   ]
   return (
     <section>
@@ -26,9 +41,9 @@ function App() {
             position={post.position}
             content={post.title}
           />))}
-      
         </main>
       </section>
+
     </section>
   );
 }

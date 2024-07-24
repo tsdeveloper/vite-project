@@ -14,4 +14,11 @@
   & p {
     margin-top: 1rem;
   }
+  & a {
+    color: $green-100;
+    font-weight: bold;
+    &:hover {
+      color: $green-500;
+    }
+  }
 }
