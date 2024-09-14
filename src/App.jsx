@@ -1,9 +1,9 @@
-import { Header } from "./components/Header";
-import { Post } from "./components/Post";
+import { Header } from './components/Header';
+import { Post } from './components/Post';
 
-import styles from "./App.module.css";
-import "./styles/global.scss";
-import { Sidebar } from "./components/Sidebar";
+import styles from './App.module.css';
+import './styles/global.scss';
+import { Sidebar } from './components/Sidebar';
 
 function App() {
 
@@ -26,7 +26,7 @@ function App() {
       title: ['👻🛸Lorem ipsum dolor sit amet consectetur adipisicing elit',
         '👉🏽 https://github.com/tsdeveloper/vite-project', 
         '#frontend #reactjs #vite #nextjs']
-    },    
+    }
   ]
   return (
     <section>
@@ -36,7 +36,7 @@ function App() {
         <Sidebar />
         <main>
          {posts.map((post) => (
-          <Post
+          <Post key={post.name}
             author={post.name}
             position={post.position}
             content={post.title}

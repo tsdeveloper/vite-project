@@ -11,7 +11,7 @@ export function Post(props) {
           </div>
         </div>
 
-        <time title="09 de julho de 2024" datetime="2024-07-08 01:02">
+        <time title="09 de julho de 2024" dateTime="2024-07-08 01:02">
           Publicado há 1h
         </time>
       </header>
@@ -21,6 +21,12 @@ export function Post(props) {
           return <div>{index != 0 ? <a href="#">{key}</a> : <p>{key}</p>}</div>;
         })}
       </div>
+
+      <form className="comment-form">
+        <strong>Your Feedback</strong>
+        <textarea placeholder="Your Feedback" />
+        <button type="submit">Send</button>
+      </form>
     </article>
   );
 }
